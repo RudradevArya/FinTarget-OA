@@ -1,0 +1,37 @@
+npm init -y
+npm install express ioredis express-rate-limit rate-limit-redis
+to run  = node app.js
+npm install --save-dev typescript @types/express @types/node @types/ioredis ts-node-dev
+
+folder strcuture
+nodejs-api-cluster/
+├── src/
+│   ├── app.ts
+│   ├── config.ts
+│   ├── taskProcessor.ts
+│   └── types.ts
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+├── tsconfig.json
+└── README.md
+
+
+to run
+
+Build the TypeScript code:
+npx tsc
+
+Run the application:
+To run without Docker:
+node dist/app.js
+To run with Docker:
+docker-compose up --build
+
+Test the API:
+You can use curl to test the API:
+curl -X POST -H "Content-Type: application/json" -d '{"userId": "user123"}' http://localhost:3000/process-task
+Repeat this command multiple times to see the rate limiting in action.
+View the logs:
+The task logs will be written to the task_log.txt file in the project root directory. You can view them with:
+cat task_log.txt
