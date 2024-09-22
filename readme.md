@@ -96,15 +96,15 @@ Process a task for a specific user.
 ## Outputs
 
 * Starting up
-![Starting up](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/1.png)
+![Starting up](https://github.com/RudradevArya/FinTarget-OA/blob/main/outputs/1.png)
 * cURL Outputs
-![cURL Outputs](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/2.png)
+![cURL Outputs](https://github.com/RudradevArya/FinTarget-OA/blob/main/outputs/2.png)
 * Postman Output
-![Postman Output](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/3.png)
+![Postman Output](https://github.com/RudradevArya/FinTarget-OA/blob/main/outputs/3.png)
 * Task\_log log file
-![Task_log log file](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/4.png)
+![Task_log log file](https://github.com/RudradevArya/FinTarget-OA/blob/main/outputs/4.png)
 * Redis user queue monitoring
-![Redis user queue monitoring](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/5.png)
+![Redis user queue monitoring](https://github.com/RudradevArya/FinTarget-OA/blob/main/outputs/5.png)
 
 ## Architecture Decisions
 
