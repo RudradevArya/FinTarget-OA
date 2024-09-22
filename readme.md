@@ -1,6 +1,9 @@
 # Node.js API Cluster with Rate Limiting
 
-This project implements a Node.js API cluster with rate limiting and task queueing capabilities using TypeScript, Express, and Redis.
+This project/assessment implements a Node.js API cluster with rate limiting and task queueing capabilities using TypeScript, Express, and Redis.
+
+## Problem Statement
+[Detailed Problem Statement](https://drive.google.com/file/d/120l2XdptGb1AARiMFcsQKk7LLdyLe19z/view?usp=drive_link)
 
 ## Features
 
@@ -9,7 +12,8 @@ This project implements a Node.js API cluster with rate limiting and task queuei
 - Task queueing (1 task per second per user)
 - Redis for distributed rate limiting and task queueing
 - TypeScript implementation
-- Docker support
+- Testing suite tried
+- Docker support(tried)
 
 ## Prerequisites
 
@@ -17,6 +21,21 @@ This project implements a Node.js API cluster with rate limiting and task queuei
 - Redis
 - Docker and Docker Compose (optional)
 
+
+## Folder struct
+```
+FinTarget/
+├── src/
+│   ├── app.ts
+│   ├── config.ts
+│   ├── taskProcessor.ts
+│   └── types.ts
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+├── tsconfig.json
+└── readme.md
+```
 ## Installation
 
 1. Clone the repository:
@@ -66,12 +85,15 @@ Process a task for a specific user.
 - 429 Too Many Requests: Rate limit exceeded
 - 500 Internal Server Error: Server error
 
+
+## Outputs
+
 ## Architecture Decisions
 
 - Used TypeScript for improved type safety and developer experience.
 - Implemented a custom task queue using Redis to ensure one task per second per user across multiple workers.
 - Used Redis for distributed rate limiting across multiple worker processes.
-- Containerized the application for easy deployment and scaling.
+- Containerized the application for easy deployment and scaling(Tried)
 
 ## Future Improvements
 
