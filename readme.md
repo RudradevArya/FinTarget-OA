@@ -5,15 +5,17 @@ This project/assessment implements a Node.js API cluster with rate limiting and 
 ## Problem Statement
 [Detailed Problem Statement](https://drive.google.com/file/d/120l2XdptGb1AARiMFcsQKk7LLdyLe19z/view?usp=drive_link)
 
-## Features
+## Features/Tasklist
 
-- Node.js cluster with multiple workers
-- Rate limiting (20 requests per minute per user)
-- Task queueing (1 task per second per user)
-- Redis for distributed rate limiting and task queueing
-- TypeScript implementation
-- Testing suite tried
-- Docker support(tried)
+
+
+> * [x] `Node.js cluster with multiple workers`
+> * [x] `Rate limiting (20 requests per minute per user)`
+> * [x] `Task queueing (1 task per second per user)`
+> * [x] `Redis for distributed rate limiting and task queueing`
+> * [x] `TypeScript implementation`
+>   [x] `Testing suite tried`
+>   [x] `Docker support(tried)`
 
 ## Prerequisites
 
@@ -40,8 +42,8 @@ FinTarget/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/nodejs-api-cluster.git
-   cd nodejs-api-cluster
+   git clone https://github.com/RudradevArya/FinTarget-OA.git
+   cd FinTarget-OA
    ```
 
 2. Install dependencies:
@@ -87,6 +89,17 @@ Process a task for a specific user.
 
 
 ## Outputs
+- Starting up
+![Starting up](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/1.png)
+
+- cURL Outputs
+![cURL Outputs](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/2.png)
+
+- Postman Output
+![Postman Output](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/3.png)
+
+- Task_log log file
+![Task_log log file](https://github.com/RudradevArya/FinTarget-OA/tree/blob/main/outputs/4.png)
 
 ## Architecture Decisions
 
